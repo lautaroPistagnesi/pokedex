@@ -4,7 +4,7 @@ import pokedexFixture from "../../__tests__/pokedex.fixture";
 
 test("mostrar pokemon", () => {
     document.body.innerHTML = pokedexFixture
-    const pokemon = {
+    const a = {
         id:bulbasaur.id,
         nombre:bulbasaur.name,
         foto:bulbasaur.sprites.front_default,
@@ -12,5 +12,5 @@ test("mostrar pokemon", () => {
         habilidades:bulbasaur.abilities,
         movimientos:bulbasaur.moves,
     }
-    
+    mostrarPokemon(a)
 })
